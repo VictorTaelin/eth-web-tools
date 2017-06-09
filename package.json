@@ -1,0 +1,22 @@
+{
+  "name": "reactapptemplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "preinstall": "npm install -g reactify; npm install -g browserify",
+    "build": "browserify -t reactify -d src/client.js > app/index.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ethfp": "^0.1.24",
+    "express": "^4.14.0",
+    "ramda": "^0.24.1",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.2",
+    "reactify": "^1.1.1",
+    "xhr": "^2.2.2"
+  }
+}
